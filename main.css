@@ -37,13 +37,13 @@ ul.nav li a:hover:not(.active) {
 ul.nav li a.active {
     background-color:#E698C8 ;
 }
-p{
+.textstuff{
     background-color:pink ;
     border-radius: 10px;
     text-align: center;
     margin-top: 50px;
     margin-inline: 100px;
-    padding: 20px; 
+    padding: 15px; 
     outline: 10px solid pink; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     font-size: 20px;
@@ -53,11 +53,20 @@ p{
 }
 img {
     
-    width: 40%; /* Increase width by 200% */
-    height: auto; /* Maintain aspect ratio */
+    width: 40%; 
+    height: auto; 
 }
 @font-face {
     font-family: Raleway;
     src: url(Raleway-Regular.ttf) format('truetype');
     
-  }
+}
+
+summary {
+    cursor: pointer !important;
+    margin: 0 !important;
+}
+details {
+
+    padding: 0 !important;
+}
