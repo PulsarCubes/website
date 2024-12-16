@@ -15,7 +15,7 @@
         <li><a href="/about">about me</a></li>
 	</ul>
     <p class="textstuff">
-       i'm a very mediocre all-rounder hailing from Illinois and i've been cubing for approx. 6 years
+       i'm a very mediocre all-rounder hailing from Illinois and i've been cubing for approx. <span id="cubing-timestamp"></span> years
        <br>i main clock and global 3.6 (when im not dnfing lolll) and formerly held FNAR single at 2.97
        <br>i am the current IL SR holder and FNAR holder of 2x2 single because i got a 6 mover 
 <br><a href="https://www.worldcubeassociation.org/persons/2018CROU02" target="_blank">my WCA!</a>
@@ -23,5 +23,27 @@
 <br><a href="https://twitch.tv/pulsarcubes" target="_blank">my twitch!</a>
 
     </p>
+    <script>
+  
+        const birthDate = new Date("2018-05-25T00:15:00"); 
+        //close date but i dont remember exact
+        
+        function updateAge() {
+          const now = new Date();
+          const ageInMilliseconds = now - birthDate;
+          
+         
+          const years = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+          
+         
+          const formattedAge = Math.round(years-.3); 
+          
+          
+          document.getElementById("cubing-timestamp").textContent = formattedAge;
+        }
+        
+        setInterval(updateAge, 100);
+          </script>
+            <!-- i just did again this cuz its funny and kinda cool -->
 </body>
 </html>
